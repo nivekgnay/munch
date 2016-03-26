@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MunchApp">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Munch!</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/skeleton.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+    <script src="/static/js/app.js"></script>
+
+</head>
+<body ng-controller="MainController as mc">
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="nav">
+    <div class="row">
+        <a href="/#/"><div id="logo"><img src="img/munch_logo.png"></div></a>
+    </div>
+</div>
+
+<div class="container" ng-view></div>
+
+<div class="nav footer">
+    <div class="row footer_txt">
+        <p>Created by <a href="http://andrewduna.bandcamp.com" target="_blank" style="text-decoration: none;color: salmon;">Andrew Duna</a>, <a href="http://jessicatinshlin.wordpress.com" target="_blank" style="text-decoration: none;color: salmon;">Jessica Lin</a>, <a href="http://juntan.me" target="_blank" style="text-decoration: none;color: salmon;">Jun Tan</a>, <a href="http://annawang.me" style="text-decoration: none;color: salmon;" target="_blank">Anna Wang</a>, &
+            <a href="http://www.sylviasyang.com" style="text-decoration: none;color: salmon;" target="_blank">Sylvia Yang</a></p>
+    </div>
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'porter';
+    src: url('/fonts/porter.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/montserrat.otf');
+}
+
+
+@font-face {
+    font-family: 'comforta';
+    src: url('/fonts/comforta.ttf');
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url('/fonts/lobster.otf');
+}
+
+body {
+    background:white;
+    color:black;
+}
+
+.button_inactive {
+
+}
+
+.sentence {
+    margin-left:50px;
+    max-width:600px;
+}
+
+#logo img {
+    height:40px;
+    padding:9px;
+    margin-left:50px;
+}
+
+.row h2 {
+    letter-spacing:8px;
+    font-size:45px;
+    font-weight:500;
+    text-align:left;
+    font-family:'raleway',sans-serif;
+    color:salmon;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.row h1 {
+    letter-spacing:8px;
+    font-size:40px;
+    font-weight:200;
+    text-align:left;
+    margin-top:1.3em;
+    font-family:'raleway',sans-serif;
+    color:grey;
+    text-transform: uppercase;
+
+}
+
+.row h5 {
+    font-weight:200;
+    font-size:1.8em;
+    letter-spacing:2px;
+    font-family:'raleway';
+}
+
+.nav {
+    background: white;
+    height:60px;
+    border: 1.5px solid #f2f2f2;
+}
+
+
+.button {
+    font-family:'raleway',sans-serif;
+    font-size:15px;
+    background:#f2f2f2;
+}
+
+.button:hover {
+    background:grey;
+    color:white;
+}
+
+.button-primary {
+    margin-top:20px;
+    margin-bottom:100px;
+}
+
+#suggestions h5 {
+    font-weight: 200;
+    text-align: center;
+}
+
+.suggestions_button {
+    background-color: white;
+    color: salmon;
+    border: 1px solid salmon;
+    cursor: default;
+}
+
+.suggestions_button:hover {
+    background: none;
+    color: salmon;
+    border: 1px solid salmon;
+}
+
+#suggestions h4 {
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: salmon;
+}
+
+h6 {
+    margin: 0;
+}
+
+.apple {
+    width: 30%;
+}
+
+.fruit {
+    width: 60%;
+}
+
+#suggestions h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: grey;
+}
+
+.button_inside {
+    background-color: white;
+    color: salmon;
+    border: 1px solid salmon;
+    cursor: default;
+}
+.button_inside:hover {
+    background: salmon;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/*.main_sel {
+	width: 80%;font-style: italic;border: none;border-bottom: 1px solid salmon;font-style: normal;text-transform: lowercase;font-size: 2rem;font-weight: normal;text-align: left;font-size: 2em;font-weight: 400;color: grey;height: 2em;margin-top: 0;font-style: italic;border-radius: 0;
+}
+.main_sel:hover {
+	border-bottom-color: salmon;
+}*/
+
+.selected_btn {
+
+}
+
+.selected_craving {
+	color: #FFF !important;
+	background-color: salmon;
+	border-color: salmon !important;
+}
+.selected_craving:hover {
+    background: #e4766b;
+}
+
+#munchBtn:hover {
+    background: #52d85d;
+    border-color: #52d85d;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height:auto;
+    min-width:100%;
+    border-left:none;
+    border-bottom:none;
+    border-right:none;
+}
+.footer_txt > p {
+    text-align: center;
+    margin-top:1.5em;
+    font-size:.9em;
+}
+.footer_txt > a {
+    text-decoration: none !important;
+}

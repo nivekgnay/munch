@@ -1,0 +1,64 @@
+ <div class="row">
+        <div class="twelve columns">
+            <h1 ng-init="greeting()" style="text-transform: uppercase">Good {{ greeting }}!</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <h2>What's for munch?</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="sentence">
+        <div class="row">
+            <div class="five columns">
+                <h5>I'M CURRENTLY</h5>
+            </div>
+            <div class="seven columns">
+                <button class="button main_sel" style="width: 90%;" id ="currently" ng-click="chooseActivity()">
+                    {{ currently_display }}</button>
+            </div>
+            <div class="twelve columns dropdown" id = "currently_drop" style="display: none;">
+                <button class="button" ng-click="currently_display = 'Hitting the Books'; chooseActivity();">Hitting the books</button>
+                <button class="button" ng-click="currently_display = 'Working out'; chooseActivity();">Working out</button>
+                <button class="button" ng-click="currently_display = 'Kicking back'; chooseActivity();">Kicking back</button>
+                <button class="button" ng-click="currently_display = 'At a concert'; chooseActivity();">At a concert</button>
+                <button class="button" ng-click="currently_display = 'Fighting a bear'; chooseActivity();">Fighting a bear</button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 2em;" ng-show="currently_display">
+            <div class="five columns">
+                <h5 style="margin-bottom: 0;">FEELING</h5>
+            </div>
+            <div class="seven columns">
+                <button class="button main_sel" style="width: 92%;" id = "feeling" ng-click="chooseFeeling()">{{ feeling_display }}</button>
+            </div>
+            <div class="twelve columns dropdown" id = "feeling_drop" style="display: none;">
+                <button class="button" ng-click="feeling_display = 'Worn out';chooseFeeling()">Worn out</button>
+                <button class="button" ng-click="feeling_display = 'Not-so-hot';chooseFeeling()">Not-so-hot</button>
+                <button class="button" ng-click="feeling_display = 'Productive';chooseFeeling()">Productive</button>
+                <button class="button" ng-click="feeling_display = 'Adventurous';chooseFeeling()">Adventurous</button>
+                <button class="button" ng-click="feeling_display = 'Damn good';chooseFeeling()">Damn good</button>
+            </div>
+        </div>
+
+        <div class="row" ng-show="feeling_display">
+            <div class="twelve columns">
+                <h5>&amp; CRAVING SOMETHING</h5>
+            </div>
+            <div class="twelve columns">
+                <button class="button craving_btn" ng-click="getCraving(); craving = true;" onclick="$(this).toggleClass('selected_craving').animate()">crunchy</button>
+                <button class="button craving_btn" ng-click="getCraving(); craving = true;" onclick="$(this).toggleClass('selected_craving').animate()">salty</button>
+                <button class="button craving_btn" ng-click="getCraving(); craving = true;" onclick="$(this).toggleClass('selected_craving').animate()">chocolatey</button>
+                <button class="button craving_btn" ng-click="getCraving(); craving = true;" onclick="$(this).toggleClass('selected_craving').animate()">sweet</button>
+                <button class="button craving_btn" ng-click="getCraving(); craving = true;" onclick="$(this).toggleClass('selected_craving').animate()">fatty</button>
+            </div>
+        </div>
+    </div>
+    <a href="#/results">
+    <button class="button button-primary" style="width:88%; height:2%;margin-top: 3em;" id="munchBtn" ng-show="checkCravings()">LET'S MUNCH</button>
+    </a>
